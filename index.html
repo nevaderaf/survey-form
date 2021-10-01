@@ -1,1 +1,98 @@
-<h1 id="title">Tell Me About Your Internet Usage</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif, serif;
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+            label{
+                font-size: 18;
+                display: block;
+                padding-bottom: 5px;
+            }
+            input, textarea, select{
+                display: block;
+                width: 100%;
+                padding-bottom: px;
+            }
+            form{
+                background-color: lightgrey;
+                padding: 20px 100px 40px 100px;
+            }
+            textarea {
+                display: block;
+                min-height: 40px;
+                min-width: 100px;
+                width: 100%; 
+            }
+            #button-area {
+                float: left;
+                width: 50%;
+                height: 50%;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:bisque;text-align:center">
+        <h1 id="title">Tell Me About Your Favorite Game Genre</h1>
+        <p id="description">This is a survey 
+            where you can tell us about your favourite game genre.
+        </p>
+        <form id="survey-form">
+            <label id="name-label">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="First Name"><br>
+
+            <label id="email-label">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Email"><br>
+            
+            <label id="game_genres">Game Genres</label>
+            <select id="dropdown" name="game_genres">
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="battle_royale">Battle Royale</option>
+                <option value="beat'em_up">Beat'em Up</option>
+                <option value="fighting">Fighting</option>
+                <option value="fps">FPS</option>
+                <option value="horror">Horror</option>
+                <option value="mmo">MMO</option>
+                <option value="moba">MOBA</option>
+                <option value="platform">Platform</option>
+                <option value="puzzle">Puzzle</option>
+                <option value="racing">Racing</option>
+                <option value="ryhthm">Ryhthm</option>
+                <option value="rpg">RPG</option>
+                <option value="simulation">Simulation</option>
+                <option value="sports">Sports</option>
+                <option value="survival">Survival</option>
+                <option value="survival_horror">Survival Horror</option>
+                <option value="strategy">Strategy</option>
+                <option value="tps">TPS</option>
+            </select>
+
+            <label id="number-label">Your Rating:</label>
+            <input type="number" name="number" id="number" min="0" max="10" required placeholder="Rating (1 to 10)">
+
+            <br>
+            <div id="button-area">
+                <label id="gender-label">Select Your Gender:</label>
+                <input type="radio" class="radio-inline" name="gender" value="male"> Male<br>
+                <input type="radio" class="radio-inline" name="gender" value="female">Female<br>
+                <input type="radio" class="radio-inline" name="gender" value="other"> Other
+            </div>
+            <div id="button-area">
+                <label id="time-spent-per-day">Time Spent Per Day:</label>
+                <input type="checkbox" id="hour" name="hour" value="hour"> I play less than an hour in a day.<br>
+                <input type="checkbox" id="two-hours" name="two-hours" value="two-hours"> I play two hours or more per day.<br>
+                <input type="checkbox" id="three-hours" name="three-hours" value="three-hours"> I play more than three hours per day.<br>
+            </div>
+
+            <label id="additional-comments">Additional Comments:</label>
+            <textarea placeholder="Additional Comments"></textarea>
+            <input type="submit" id="submit">
+        </form>
+        <script type="text/javascript" src= "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
